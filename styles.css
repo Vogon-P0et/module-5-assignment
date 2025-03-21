@@ -1,0 +1,91 @@
+:root {
+   --hf:rgb(52, 121, 40);
+   --bg:rgb(255, 251, 230);   
+   --body:rgb(192, 235, 166);
+   --border:rgb(252, 205, 42);
+}
+nav {
+    background-color: var(--hf);
+}
+nav img {
+    height: 80px;
+    width: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+footer img {
+    max-height:300px;
+    min-height:100px;
+    left: auto;
+    right: auto;
+}
+footer {
+    margin-top: 12rem;
+    background-color: var(--hf);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+body {
+    background-color: var(--bg);
+}
+#jumbotron, #jumbotron div {
+    background-color: var(--body);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* applies to index_1stattempt.html */
+   /* }
+html {
+    left: auto;
+    right: auto;
+}
+main {
+    background-color: var();
+}
+.favicon {
+    max-height: 100px;
+    margin-bottom: -25px;
+}
+header, footer {
+    background-color: var(--hf);
+}
+#cta {
+    background-color: var(--bg);
+}
+#about-us {
+    background-color: var(--body);
+}
+#registration, #table-pg-home {
+    margin-top: 10rem;
+    margin-bottom: 10rem;    
+} */
+
+
