@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md border-bottom p-3" id="nav">
-            <a class="navbar-brand mx-2 p-0" href="#home"><img class="favicon" src="./images/Logo.png" alt="The GOAT"></a>
+    <header id="nav">
+        <!-- Navbar has a collapsible hamburger menu but I need to put a secondary header at the top with social icons and a search bar with login/register buttons as well-->
+        <nav class="navbar navbar-expand-md border-bottom border-warning p-2 fixed-top">
+            <a class="navbar-brand mx-2 p-0" href="#nav"><img class="favicon" src="./images/Logo.png" alt="The GOAT"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,12 +25,15 @@
                 </ul>
             </div>
         </nav>
+        <!-- This section may need to change slightly since the overall concept is an affiliate marketing site and blog with archives of old, nostalgic categories for websites -->
+        <!-- as well as cult classic movies, television series, and possibly a section for books, but no music since music genres are pretty polar and sometimes divisive -->
+        <!-- appropriate ads and affiliate links will become apparent after the character of this website takes shape-->
         <div class="container-fluid col-xxl-8 px-4 py-5" id="hero">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
               <div class="col-10 col-sm-8 col-lg-6">
-                <img src="./images/pooping goat.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                <img src="./images/pooping goat.png" class="d-block mx-lg-auto img-fluid" alt="Link dropping stinky nuggets" width="700" height="500" loading="lazy">
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 justify-content-md-center">
                 <h1 class="display-3 fw-medium text-body-emphasis lh-1 mb-3">Link G.O.A.T</h1>
                 <h3 class="display-6 lh-1 mb-5">The internet's greatest source of crusty, old websites that are as weird and smelly as the G.O.A.T</h3>
                 <p class="lead">Register below to join our community.</p>
@@ -40,26 +44,96 @@
             </div>
           </div>
     </header>
-
     <main>
-        <div class="my-5">
-            <div class="container" id="jumbotron">
-            <div class="p-3 text-center">
-              <div class="container py-5">
-                <h1 class="text-body-emphasis mb-3">There can be only one G.O.A.T.</h1>
-                <p class="col-lg-8 mx-auto lead">
-                  Actually, this community is full of GOAT's, and you'll find them leaving little bitty morsels of stinky goodness for you to discover all over the place. We're a community of wanderers- roaming the internet to find some of the most obscure gems from all over the internet. Make sure to join us- and don't just leave your droppings wherever you go.<br> You'll find categories for all of your content and we're always creating more.  You'll find our Community Guidelines on our <a href="#faq">Frequently Asked Questions</a> page. Happy hunting and watch what you step in...some of these relics are old as S***.
-                </p>
-              </div>
-            </div>
+
+        <!-- Jumbotron a.k.a About Us section -->
+        <div class="my-5 border-top border-bottom border-warning" id="jumbotron">
+            <div class="p-5 text-center">
+                <div class="container py-5 shadow-lg border-warning border rounded-4">
+                    <h1 class="text-body-emphasis mb-3">There can be only one G.O.A.T.</h1>
+                    <p class="col-lg-8 mx-auto lead">
+                        Actually, this community is full of GOAT's, and you'll find them leaving little bitty morsels of stinky goodness for you to discover all over the place. We're a community of wanderers- roaming the internet to find some of the most obscure gems from all over the internet. Make sure to join us- and don't just leave your droppings wherever you go.<br> You'll find categories for all of your content and we're always creating more. To contribute, you must register below. You'll find our Community Guidelines on our <a href="#faq">Frequently Asked Questions</a> page. Happy hunting and watch what you step in...some of these relics are old as S***. Take a look at some of our favorites below and enjoy living like a G.O.A.T.
+                    </p>
+                </div>
             </div>
         </div>
-   
+        
+        <!-- responsive image- full width -->
+        <img src="..." class="img-fluid" width="100%" height="30vh" alt="...">
 
+        <!-- Top ten table -->
+        <div class="mx-auto col-8 p-3">
+            <h2 class="mb-3 text-center">The G.O.A.T's top 10</h2>
+            <p class="text-lead text-center mb-3">Not ranked in any order</p>
+            <div>
+            <table class="table table-hover align-middle">
+                <thead>
+                <tr>
+                    <th scope="col" class="w-25">Site Name</th>
+                    <th scope="col" class="w-25">Site URL</th>
+                    <th scope="col" class="w-25">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="align-top">Windows 93</td>
+                    <td class="align-top"><a href="https://www.windows93.net">https://www.windows93.net</a></td>
+                    <td>A warped parody of a Windows OS. Play fake games, open glitchy apps, and explore a surreal 90s tech dreamscape.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">Zoom Quilt</td>
+                    <td class="align-top"><a href="https://zoomquilt.org/">https://zoomquilt.org/</a></td>
+                    <td>An infinite zooming patchwork of surreal art. Use arrow keys to control speed. Hypnotic and collaborative, from the early 2000s.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">Space Jam 1996</td>
+                    <td class="align-top"><a href="https://www.spacejam.com/1996/">https://www.spacejam.com/1996/</a></td>
+                    <td>The original movie site, frozen in time with GeoCities-style design. A gem of 90s web nostalgia.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">Million Dollar Homepage</td>
+                    <td class="align-top"><a href="http://www.milliondollarhomepage.com/">http://www.milliondollarhomepage.com/</a></td>
+                    <td>A 2005 experiment where pixels were sold for $1 each. Now a chaotic mosaic of tiny ads and links, many still live. Go at your own risk.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">Drive Me Insane</td>
+                    <td class="align-top"><a href="https://www.drivemeinsane.com/">https://www.drivemeinsane.com/</a></td>
+                    <td>Since 1997, you've been able to have some fun at another person's expense with this fun website! Waste time turning on and off the lights in their office, play with a disco ball and even display your own message on their computer!</td>
+                </tr>
+                <tr>
+                    <td class="align-top">Zombo.com</td>
+                    <td class="align-top"><a href="http://zombo.com">http://zombo.com</a></td>
+                    <td>Endless looping voice welcomes you to "infinite possibilities" with trippy animations. A pointless classic from the early internet.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">The Useless web</td>
+                    <td class="align-top"><a href="https://theuselessweb.com/">https://theuselessweb.com/</a></td>
+                    <td>One button takes you to random, bizarre sites—like bouncing cats or pointless games. A rabbit hole of oddities. Make sure to keep trying it to get endless brainrot.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">The Official Ninja Homepage</td>
+                    <td class="align-top"><a href="https://www.realultimatepower.net/">https://www.realultimatepower.net/</a></td>
+                    <td>A satirical early-2000s site worshipping ninjas with over-the-top text and flip-kick facts. It's got that raw, unhinged HTML charm.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">Fake Windows Update Screen</td>
+                    <td class="align-top"><a href="https://hackertyper.net/">https://hackertyper.net/</a></td>
+                    <td>Smash your keyboard and watch fake code scroll like you're a Hollywood hacker. It's all for show—zero skill needed, just pure retro aesthetic from 2011.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">This cell is aligned to the top.</td>
+                    <td class="align-top"><a href="https://www.spaghettimonster.org/">https://www.spaghettimonster.org/</a></td>
+                    <td>The satirical “religion” worshiping a pasta deity, with a site full of faux-serious scriptures and goofy graphics. It's got that early-2000s internet humor vibe.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
 
-
+        <!-- Membership registration form -->
         <div class="container my-5 shadow-lg p-0" id="registration">
-            <form action="#" method="POST" class="border p-4 shadow-sm bg-body-tertiary">
+            <form action="#" method="POST" class="p-4">
+                <!-- kept the H2 inside the form for what I feel is a cleaner look -->
                 <h2 class="text-center text-black-50 pb-2">Registration Form</h2>
                 <div class="row mb-3">
                     <div class="col-6">
@@ -71,16 +145,19 @@
                         <input type="text" id="l_name" name="l_name" class="form-control" placeholder="The GOAT">
                     </div>
                 </div>
+                <!-- email address required; I did not add .col classes below for simplicity since they are full width -->
                 <label for="email" class="form-label">Email Address</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text">@</span>
                     <input type="text" class="form-control" id="email" name="email" required>
                 </div>
+                <!-- password marked as required but chose not to display it with class is-invalid since javascript is not yet enabled to dynamically enable the class -->
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
                     <input type="password" id="password" name="password" class="form-control" placeholder="must contain at least 8 characters" required>
                     <div class="invalid-feedback">Username is Required</div>
                 </div>
+                <!-- checkbox example derived from bootstrap>examples -->
                 <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                     <label class="form-check-label" for="flexCheckDefault">I agree to the terms of use of the link G.O.A.T website
@@ -91,21 +168,25 @@
         </div>
     </main>
 
-    <footer class="container-fluid p-4">
+    <!-- Bootstrap footer, inspired by examples from Bootstrap>examples and svg images copied from bootstrap with modified viewport, size and color properties -->
+    <footer class="container-fluid p-4" id="footer">
         <div class="row py-2 mx-auto">
+            <!-- Link the Goat footer logo -->
             <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <img class="img-thumbnail" src="./images/footer logo.png" alt="Link the GOAT">
+                <img class="img" src="./images/footer logo.png" alt="Link the GOAT">
             </div>
+            <!-- Quick links to home page sections, will link to internal pages later -->
             <div class="col-lg-3 col-md-6 col-sm-12 mb-3 pt-5 text-white">
                 <h5>Section</h5>
                 <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#nav" class="nav-link p-0 text-white">Home</a></li>
+                <li class="nav-item mb-2"><a href="#jumbotron" class="nav-link p-0 text-white">About Us</a></li>
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Merch Store</a></li>
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Archives</a></li>
                 </ul>
             </div>
+            <!-- Contact information -->
             <div class="col-lg-3 col-md-6 col-sm-12 mb-3 pt-5 text-white">
                 <h5>Contact Us</h5>
                 <ul class="nav flex-column list-unstyled">
@@ -115,6 +196,7 @@
                 <p class="nav-item mb-2 p-0 text-white">7901 4th St N STE: 300 </br>St. Petersburg, FL 33702</p> 
                 </ul>
             </div>
+            <!-- subscribe to the newsletter entry form -->
             <div class="col-lg-3 col-md-6 col-sm-12 mb-3 pt-5">
                 <form>
                 <h5 class="my-3 text-white">Subscribe to our newsletter</h5>
@@ -126,7 +208,7 @@
                 </form>
             </div>
         </div>
-
+        <!-- Copyright and legal section -->
         <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 border-top">
         <p class="fw-bold text-white">© 2025 Innvisia Digital Marketing, Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
