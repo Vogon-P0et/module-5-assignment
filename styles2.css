@@ -1,0 +1,439 @@
+
+
+/* Media Queries */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #hero-title h1 {
+        display: block;
+        font-size: 4rem;
+    }
+    #hero-title h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        width: 50%;
+    }
+    #jumbotron h1 {
+        font-size: 2.5rem;
+    }
+    #jumbotron p {
+        font-size: 1.5rem !important;
+    }
+    #featured div.row div img.img-fluid {
+        padding: 0;
+        margin: 1rem !important;
+    }
+    .table td,
+    .table th {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width; 1400px) {
+
+}
+
+@media (min-width:768px) and (max-width: 991px) { 
+    #hero-section .col-lg-4.col-md-12.col-12 img {
+        height: 400px;
+        width: auto;
+        margin: 1rem auto !important;
+        display: block !important;
+    }
+    #hero-section .col-lg-7.col-md-12.col-12 {
+        text-align: center; /* Center text and button */
+    }
+    #hero-title > h1 {
+        font-size: 4rem;
+    }
+    #hero-title h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        width: 80%;
+    }
+
+    #hero-title .btn {
+        width: 100%;
+    }
+    #jumbotron h1 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    #jumbotron p {
+        font-size: 1.5rem !important; /* Override Bootstrap lead class */
+        font-weight: 200;
+    }
+    #featured img.img.rounded {
+        margin: 0 !important;
+    }
+    .table td,
+    .table th {
+        white-space: nowrap; /* Prevent text wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis for overflow */
+        max-width: 0; /* Allow truncation */
+        padding: 0.3rem; /* Even smaller padding for mobile */
+        font-size: 1rem; /* Smaller font for mobile */
+    }
+    #registration form label,
+    #registration form input {
+        font-size: 0.8rem;
+    }
+} 
+
+@media (min-width:576) and (max-width: 767px) {
+
+    .table td,
+    .table th {
+        white-space: nowrap; /* Prevent text wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis for overflow */
+        max-width: 0; /* Allow truncation */
+        padding: 0.3rem; /* Even smaller padding for mobile */
+        font-size: 1rem; /* Smaller font for mobile */
+    }
+    #registration form label,
+    #registration form input {
+        font-size: 0.8rem;
+    }
+} 
+
+@media (max-width: 575px) {
+    /* Hero Section */
+    #hero-section .col-lg-4.col-md-12.col-12 img {
+        height: 350px;
+        width: auto;
+        margin: 1rem auto !important;
+        display: block !important;
+    }
+
+    #hero-section .col-lg-4.col-md-12.col-12 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #hero-section .col-lg-7.col-md-12.col-12 {
+        text-align: center;
+    }
+    #hero > h1 {
+        font-size: 3.5rem;
+        font-weight: 400;
+    }
+    #hero h3 {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    #hero .btn {
+        width: 100%;
+    }
+
+    /* Featured Section */
+    #featured img {
+        width: 60%;
+        height: 60%;
+        margin: 1rem auto;
+        display: block;
+    }
+ 
+    #featured .d-flex.flex-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #feature-banner > img {
+        height: 40vh;
+    }
+
+    #featured > div > div:nth-child(1) > img,
+    #featured > div > div:nth-child(2) > img,
+    #featured > div > div:nth-child(3) > img {
+        width: 50% !important;
+        height: 50% !important;
+        margin: 1rem auto;
+    }
+    /* Jumbotron */
+    #jumbotron h1 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    #jumbotron p {
+        font-size: 1rem !important;
+        font-weight: 200;
+    }
+
+    /* Table */
+    #table {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #table th, #table td {
+        padding: 0.3rem;
+        font-size: 0.9rem;
+        line-height: 1.2;
+        max-height: 2.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    #registration form label,
+    #registration form input {
+        font-size: 0.8rem;
+    }
+    /* Footer */
+    #footer-logo > img {
+        height: 200px;
+    }
+    #footer-logo {
+        margin: 0 auto;
+        display: block;
+        justify-items: center;
+    }
+    #quick-links {
+        margin-top: 5rem;
+    }
+
+    #newsletter-signup {
+        flex: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    html, body, nav, footer, main {
+        width: 100vw !important;
+        min-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+
+
+____________________________________________________________________________
+.table td,
+.table th {
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    max-width: 0; /* Allow truncation */
+}
+
+/* Adjust font size and padding for table rows to reduce height */
+.table td,
+.table th {
+    padding: 0.5rem; /* Reduce padding to minimize row height */
+    font-size: 0.9rem; /* Slightly smaller font for compactness */
+}
+
+@media (max-width: 576px) {
+    .table td,
+    .table th {
+        padding: 0.3rem; /* Even smaller padding for mobile */
+        font-size: 0.8rem; /* Smaller font for mobile */
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    #jumbotron h1 {
+        font-size: 1.2rem;
+    }    
+    #jumbotron p.lead {
+        font-size: 0.6rem;    
+    }
+    table th,
+    table td {
+        font-size: 0.6rem; /* Smaller text for mobile */
+    }
+    #jumbotron > div > div {
+    width: 100%;
+    margin: 0;    
+    }
+}
+
+
+
+
+
+/* @media (min-width:1201px) {
+    #hero h1 {
+        font-size: 5rem;
+    }
+    #hero h3 {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+} */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+#hero h1 {
+    display: block;
+    font-size: 4rem;
+}
+#hero h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    width: 50%;
+}
+#jumbotron h1 {
+    font-size: 2.5rem;
+}
+#jumbotron p {
+    font-size: smaller;
+}
+#featured div.row div img.img-fluid {
+    padding: 0;
+    margin: 1rem !important;
+}
+.table td,
+.table th {
+    font-size: 1rem !important;
+}
+}
+
+@media (min-width:768px) and (max-width: 991px) { 
+#hero > h1 {
+    font-size: .5rem;
+}
+#hero h3 {
+    font-size: .5rem;
+    width: 80%;
+}
+#hero div.col-lg-6.col-md-12.col-12 {
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+#jumbotron p.col-lg-8.fs-5.mx-auto.lead {
+    font-size: 1rem;
+}
+#featured img.img.rounded {
+    margin: 0 !important;
+}
+.table td,
+.table th {
+    padding: 0.3rem; /* Even smaller padding for mobile */
+    font-size: 0.8rem; /* Smaller font for mobile */
+}
+#registration form label,
+#registration form input {
+    font-size: 0.8rem;
+}
+}
+
+
+
+
+:root {
+--hf:rgb(52, 121, 40);
+--bg:rgb(255, 251, 230);   
+--body:rgb(192, 235, 166);
+--border:#fccd2a;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+nav {
+background-color: var(--hf);
+z-index: 5;
+}
+nav img {
+height: 80px;
+width: 80px;
+margin-top: 0;
+margin-bottom: 0;
+padding: 0;
+}
+.navbar-toggler-icon {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+body {
+background-color: var(--bg);
+width: 100%;
+}
+main {
+max-width: 1600px;
+justify-content: center;
+}
+#jumbotron > div > div {
+background-color: var(--body);
+}
+#jumbotron p.lead {
+font-size: 1.5rem;
+}
+#table {
+margin: 10rem 0;
+}
+table > thead > tr > th {
+background-color: var(--body) !important;
+}
+#featured div.d-flex {
+border-radius: 50%;
+}
+#footer-logo {
+max-height:300px;
+min-height:100px;
+justify-self: center;
+}
+footer {
+margin-top: 12rem;
+background-color: var(--hf);
+left: auto;
+right: auto;
+}
+
+
+
+
+@media (min-width:768px) and (max-width: 991px) { 
+#hero h3 {
+    font-size: 1.5rem;
+    width: 80%;
+}
+#hero div.col-lg-6.col-md-12.col-12 {
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+#jumbotron p.col-lg-8.fs-5.mx-auto.lead {
+    font-size: 1rem;
+}
+#featured img.img.rounded {
+    margin: 0 !important;
+}
+.table td,
+.table th {
+    padding: 0.3rem; /* Even smaller padding for mobile */
+    font-size: 0.8rem; /* Smaller font for mobile */
+}
+#registration form label,
+#registration form input {
+    font-size: 0.8rem;
+}
+}
+
+@media (max-with: 991px) {
+hero {
+    margin: 0;
+    padding: 0;
+    justify-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+}
+}
+
+
