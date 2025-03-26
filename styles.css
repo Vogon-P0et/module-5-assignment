@@ -18,6 +18,7 @@ html, body {
     overflow-x: hidden;
 }
 body {
+    width: 100vw;
     background-color: var(--bg);
     margin-top: 100px !important;
 }
@@ -121,14 +122,14 @@ nav img {
 }
 #table p {
     color: var(--hf);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 #table > div > table > thead > tr > th {
     background-color: var(--body) !important;
 }
 #table th, 
 #table td {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 /* Registration */
@@ -139,17 +140,15 @@ nav img {
 #registration .btn {
     padding: 0.5rem;
 }
-#newsletter-signup {
-    max-width: 25vw;
-}
+
 
 /* Footer */
 footer {
-    margin-top: 12rem; /* Moved from mt-5 */
-    padding: 0; /* Moved from py-4 */
+    margin-top: 12rem; 
+    padding: 0;
     background-color: var(--hf);
     width: 100vw;
-    min-width: 100%;
+    min-width: auto;
 }
 footer .row {
     margin: 3rem 0 !important; /* Moved from mx-0 my-5 */
@@ -164,10 +163,13 @@ footer .row {
 
 @media (max-width: 576px) {
     #hero-section > div > div.col-10.col-sm-8.col-lg-6 > img {
-        height: 400px !important;
-        width: 420px !important;
+        height: 300px !important;
+        width: 300px !important;
         margin: 0;
         padding: 0;
+    }
+    #hero-section h1 {
+        font-size: 3rem;
     }
     #hero-section > div {
         padding-top: 0 !important;
@@ -196,17 +198,43 @@ footer .row {
         font-size: 1rem;
     }
     #footer-logo {
+        width: 100vw;
+        display: block;
+        align-items: center;
+        justify-items: center;
+    }
+    #footer-logo > img {
         width: 200px;
+    }
+    footer {
+        margin: 0;
+        padding: 0;
+    }
+    #newsletter-signup {
+        display: block;
     }
 }
    
 @media (min-width:577) and (max-width: 768px) {
+    #hero-section > div > div.col-10.col-sm-8.col-lg-6 > img {
+        height: 380px !important;
+        width: 400px !important;
+        margin: 0;
+        padding: 0;
+    }
+    #jumbotron h1 {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    #jumbotron > p {
+        font-size: 1rem !important;
+    }
     #table tr {
-        height: 2.5rem;
+        height: 2.5rem !important;
     }
     #table th, #table td {
         padding: 0.3rem;
-        font-size: 1rem;
+        font-size: 1rem !important;
         line-height: 1.2;
         max-height: 2.5rem;
         overflow: hidden;
@@ -215,7 +243,21 @@ footer .row {
     }
 }
 
+@media (min-width:768px) and (max-width: 991px) {
+    #hero-section > div > div.col-10.col-sm-8.col-md-12.col-lg-6 {
+        justify-items: center;
+    }
+    #quick-links, 
+    #contact-info {
+        width: 100vw;
+    }
+}
 
+@media (min-width: 992px) and (max-width: 1300px) {
+    #footer-logo > img {
+        width: 250px;
+    }
+}
 
 
 
