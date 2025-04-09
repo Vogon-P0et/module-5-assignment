@@ -1,0 +1,215 @@
+
+main {
+    max-width: 1600px;
+    width: 100%;
+    justify-self: center;
+}
+
+
+
+/* Hero Section */
+#hero-section h1 {
+    font-weight: 500;
+    line-height: 1;
+    color: var(--hf);
+    font-size: calc(5vh*2);
+}
+#hero-section p {
+    margin-top: 3rem;
+    font-size: caLc(2vh*1.3);
+}
+#hero-section .btn {
+    padding: 0.5rem;
+    width: 100%;
+}
+#hero-section > div > div.col-lg-5.col-md-12.col-12 > img {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+}
+
+/* About Us */
+#about-us {
+    width: 100%;
+}
+#jumbotron {
+    background-color: var(--body) !important;
+    max-width: 1200px;
+    width: 100%;
+}
+#jumbotron > p {
+    font-size: 1.25rem;
+}
+
+/* Featured Sites */
+#feature-banner {
+    margin-top: 5rem;
+    padding: 0 !important;
+}
+#feature-banner > img {
+    padding: 0 !important;
+    object-fit: cover;
+    max-height: 80vh;
+}
+#feature-pucks {
+    width: 100%;
+    padding-right: calc(1rem .5);
+    padding-left: calc(1rem* .5);
+    box-sizing: border-box;
+}
+#feature-pucks > div.row.d-flex.flex-wrap {
+    margin-left: calc(-.5*1rem);
+    margin-right: calc(-.5*1rem);
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 33.333;
+    left: auto;
+    right: auto;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+    box-shadow: black;
+}
+#feature-pucks > div > div:nth-child(1),
+#feature-pucks > div > div:nth-child(2),
+#feature-pucks > div > div:nth-child(3) {
+    text-align: center;
+}
+
+/* Table */
+#table {
+    max-width: 1200px;
+}
+#table h2 {
+    margin: 1rem 0;
+    color: var(--hf);
+}
+#table p {
+    color: var(--hf);
+    font-size: 1.5rem;
+}
+#table > div > table > thead > tr > th {
+    background-color: var(--body) !important;
+}
+#table th, 
+#table td {
+    font-size: 1rem;
+}
+
+/* Registration */
+#registration h2 {
+    color: #6c757d;
+    padding-bottom: 0.5rem;
+}
+#registration .btn {
+    padding: 0.5rem;
+}
+
+
+@media (max-width: 576px) {
+    #hero-section > div > div.col-10.col-sm-8.col-lg-6 > img {
+        height: 300px !important;
+        width: 300px !important;
+        margin: 0;
+        padding: 0;
+    }
+    #hero-section h1 {
+        font-size: 3rem;
+    }
+    #hero-section > div {
+        padding-top: 0 !important;
+    }
+    #jumbotron h1 {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    #jumbotron > p {
+        font-size: 1rem !important;
+    }
+    #table tr {
+        height: 2.5rem;
+    }
+    #table th, #table td {
+        padding: 0.3rem;
+        font-size: 1rem;
+        line-height: 1.2;
+        max-height: 2.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    #registration form label,
+    #registration form input {
+        font-size: 1rem;
+    }
+    #footer-logo {
+        width: 100vw;
+        display: flex;
+        justify-content: flex-start;
+    }
+    #footer-logo > img {
+        width: 200px;
+    }
+    footer {
+        margin: 0;
+        padding: 0;
+    }
+    #newsletter-signup {
+        display: block;
+    }
+}
+   
+@media (min-width:577) and (max-width: 768px) {
+    #hero-section > div > div.col-10.col-sm-8.col-lg-6 > img {
+        height: 380px !important;
+        width: 400px !important;
+        margin: 0;
+        padding: 0;
+    }
+    #jumbotron h1 {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    #jumbotron > p {
+        font-size: 1rem !important;
+    }
+    #table tr {
+        height: 2.5rem !important;
+    }
+    #table th, #table td {
+        padding: 0.3rem;
+        font-size: 1rem !important;
+        line-height: 1.2;
+        max-height: 2.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    #hero-section > div > div.col-10.col-sm-8.col-md-12.col-lg-6 {
+        justify-items: center;
+    }
+    #quick-links, 
+    #contact-info {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    #footer-logo > img {
+        width: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

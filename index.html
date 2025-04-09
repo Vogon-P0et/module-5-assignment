@@ -1,254 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link G.O.A.T</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
-</head>
-
+    </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md border-bottom border-warning fixed-top" id="nav">
-        <a class="navbar-brand mx-2 p-0" href="#nav"><img class="favicon" src="./images/Logo.png" alt="The GOAT"></a>
+
+        <a class="navbar-brand mx-2 p-0" href="#nav"><img class="favicon" id="favicon" src="./images/Logo.png" alt="The GOAT"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse fs-5 text-white" id="navbarNav">
+        
+        <div class="collapse navbar-collapse fs-5 fw-light text-white" id="navbarNav">
             <ul class="navbar-nav">
-                <li><a href="#nav" class="nav-link px-2 text-white">Home</a></li>
-                <li><a href="#jumbotron" class="nav-link px-2 text-white">About Us</a></li>
-                <li><a href="#footer" class="nav-link px-2 text-white">Contact Us</a></li>
-                <li><a href="#" class="nav-link px-2 text-white disabled visually-hidden">FAQs</a></li>
-                <li><a href="#" class="nav-link px-2 text-white disabled visually-hidden">Archives</a></li>
+                <li><a href="index.html" class="nav-link px-3 text-white">Home</a></li>
+                <li><a href="about.html" class="nav-link px-3 text-white">About Us</a></li>
+                <li><a href="contact.html" class="nav-link px-3 text-white">Contact Us</a></li>
+                <li><a href="about.html#faq" class="nav-link px-3 text-white">FAQs</a></li>
+                <li><a href="archives.html" class="nav-link px-3 text-white">Archives</a></li>
+                <li><a href="shop.html" class="nav-link px-3 text-white">Shop</a></li>
             </ul>
         </div>
+
     </nav>
     
-    <main class="m-0 px-0">
-        <!-- Hero Section -->
-        <div class="container col-xxl-10 px-4 py-5" id="hero-section">
-            <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-md-12 col-lg-6">
-                    <img src="./images/pooping goat.png" class="d-block mx-lg-auto img-fluid" alt="Link dropping stinky nuggets">
-                </div>
-                <div class="col-lg-6" id="hero-title">
-                    <h1 class="mb-3 text-center">Link G.O.A.T</h1>
-                    <h3 class="text-black-50 text-center">The internet's greatest source of crusty, old websites that are as weird and smelly as the G.O.A.T</h3>
-                    <p class="text-black-50 text-center">Register Below to Join Our Community.</p>
-                    <div class="d-grid d-md-flex justify-content-md-start">
-                        <button type="button" href="#registration" class="btn btn-warning text-black-50 btn-lg">Register Now</button>
-                    </div>
-                </div>
-            </div>
-          </div>
-        
-        <!-- About Us section -->
-        <div class="container my-5 py-5" id="about-us">
-            <div class="p-5 text-center bg-body-tertiary rounded-3 border border-warning shadow-lg" id="jumbotron">
-                <h1 class="text-body-emphasis mb-3">There can be only one G.O.A.T.</h1>
-                <p class="text-black-50">
-                    Actually, Link is pretty unique and this is his home, but this community is full of GOAT's, and you'll find them leaving little bitty morsels of stinky goodness for you to discover all over the place. We're a community of wanderers- roaming the internet to find some of the most obscure gems from all over the internet. Make sure to join us- and don't just leave your droppings wherever you go.<br> You'll find categories for all of your content and we're always creating more. To contribute, you must register below. You'll find our Community Guidelines on our <a href="#faq">Frequently Asked Questions</a> page. Happy hunting and watch what you step in...some of these relics are old as S***. Take a look at some of our favorites below and enjoy living like a G.O.A.T.
-                </p>
-            </div>
+    
+    <main>
+        <div class="container" id="hero-section">
+            <div id="hero-img">Hero image</div>
+            <div id="hero-title">Hero title</div>
         </div>
-        
-        <!-- responsive image- full width -->
-        <div class="container-fluid py-5" id="feature-banner">
-            <img src="./images/banner image.png" class="img-fluid my-5 shadow-sm" width="100%" alt="Find Weird News Sources on Link GOAT">
-        </div>
-        
-        <div class="container-sm" id="title-banner">
-            <img src="./images/featured sites header.png" class="img-fluid mx-0 mt-5" width="100%" alt="Monthly Featured Sites">
-        </div>
-
-        <!-- circle images -->
-        <div class="container" id="feature-pucks">
-            <div class="row d-flex flex-wrap py-5">
-                <div class="col-lg-4 d-block mb-5">
-                    <img src="./images/circle1.png" class="img-fluid rounded-circle shadow-lg" width="300px" height="300px" alt="The Original Sea Monkey's Website">
-                </div>
-                <div class="col-lg-4 d-block mb-5">
-                    <img src="./images/circle2.png" class="img-fluid rounded-circle shadow-lg" width="300px" height="300px" alt="Passweird.com">
-                </div>
-                <div class="col-lg-4 d-block">
-                    <img src="./images/circle3.png" class="img-fluid rounded-circle shadow-lg" width="300px" height="300px" alt="Hackertyper.com">
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid p-3 pb-5 my-5 mx-0 text-center">
-            <div class="d-grid gap-4 d-md-flex justify-content-md-center">
-                <button type="button" class="btn btn-warning text-black-50 btn-lg px-4">View All Categories</button>
-                <button type="button" class="btn btn-warning text-black-50 btn-lg px-4 d-none d-md-block">Check The Archives</button>
-            </div>
-        </div>
-
-        <!-- Table-- Top sites -->
-        <div class="mx-auto" id="table"> 
-            <h2 class="text-center display-1">Link's favorites</h2>
-            <p class="text-center mb-3 fs-3">Not ranked in any order</p>
-            <div class="table-responsive">
-                <table class="table table-hover table-striped border border-2">
-                <thead>
-                <tr>
-                    <th scope="col" class="w-25">Site Name</th>
-                    <th scope="col" class="w-25">Site URL</th>
-                    <th scope="col" class="w-50">Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="align-top">Windows 93</td>
-                        <td class="align-top"><a href="https://www.windows93.net">https://www.windows93.net</a></td>
-                        <td class="align-top">A warped parody of a Windows OS. Play fake games, open glitchy apps, and explore a surreal 90s tech dreamscape.</td>
-                    </tr>
-                    <tr>
-                        <td class="align-top">Zoom Quilt</td>
-                        <td class="align-top"><a href="https://zoomquilt.org/">https://zoomquilt.org/</a></td>
-                        <td class="align-top">An infinite zooming patchwork of surreal art. Use arrow keys to control speed. Hypnotic and collaborative, from the early 2000s.</td>
-                    </tr>
-                    <tr>
-                        <td class="align-top">Space Jam 1996</td>
-                        <td class="align-top"><a href="https://www.spacejam.com/1996/">https://www.spacejam.com/1996/</a></td>
-                        <td class="align-top">The original movie site, frozen in time with GeoCities-style design. A gem of 90s web nostalgia.</td>
-                    </tr>
-                    <tr>
-                        <td class="align-top">Million Dollar Homepage</td>
-                        <td class="align-top"><a href="http://www.milliondollarhomepage.com/">http://www.milliondollarhomepage.com/</a></td>
-                        <td class="align-top">A 2005 experiment where pixels were sold for $1 each. Now a chaotic mosaic of tiny ads and links, many still live. Go at your own risk.</td>
-                    </tr>
-                    <tr>
-                        <td class="align-top">Drive Me Insane</td>
-                        <td class="align-top"><a href="https://www.drivemeinsane.com/">https://www.drivemeinsane.com/</a></td>
-                        <td class="align-top">Since 1997, you've been able to have some fun at another person's expense with this fun website! Waste time turning on and off the lights in their office, play with a disco ball and even display your own message on their computer!</td>
-                    </tr>
-                    <tr>
-                        <td class="align-top">Zombo.com</td>
-                        <td class="align-top"><a href="http://zombo.com">http://zombo.com</a></td>
-                        <td class="align-top">Endless looping voice welcomes you to "infinite possibilities" with trippy animations. A pointless classic from the early internet.</td>
-                    </tr>
-                    <tr>
-                        <td class="align-top">The Useless web</td>
-                        <td class="align-top"><a href="https://theuselessweb.com/">https://theuselessweb.com/</a></td>
-                        <td class="align-top">One button takes you to random, bizarre sites—like bouncing cats or pointless games. A rabbit hole of oddities. Make sure to keep trying it for endless brainrot.</td>
-                    </tr>
-                    <tr>
-                        <td class="align-top">The Official Ninja Homepage</td>
-                        <td class="align-top"><a href="https://www.realultimatepower.net/">https://www.realultimatepower.net/</a></td>
-                        <td class="align-top">A satirical early-2000s site worshipping ninjas with over-the-top text and flip-kick facts. It's got that raw, unhinged HTML charm.</td>
-                    </tr>
-                    <tr>
-                        <td class="align-top">Hacker Typer</td>
-                        <td class="align-top"><a href="https://hackertyper.net/">https://hackertyper.net/</a></td>
-                        <td class="align-top">Smash your keyboard and watch fake code scroll like you're a Hollywood hacker. It's all for show—zero skill needed, just pure retro aesthetic from 2011.</td>
-                    </tr>
-                    <tr>
-                        <td class="align-top">Passweird</td>
-                        <td class="align-top"><a href="https://www.passweird.com/">https://www.passweird.com/</a></td>
-                        <td class="align-top">This website will create for you passwords that are not only secure*, but also so utterly repulsive that not even the most hardened criminal, identity thief, NSA agent, or jealous boyfriend would ever want to use them.</td>
-                    </tr>
-                    <tr>
-                        <td class="align-top">Jodi.org</td>
-                        <td class="align-top"><a href="https://wwwwwwwww.jodi.org/">https://wwwwwwwww.jodi.org/</a></td>
-                        <td class="align-top">Enter to find a weird collection of characters that take you into what seems like a pointless journey. Is there some explanation to this mystery? Check out the source code on the main page for an even more interesting treat. Developed back in 1998.
-                    </td>
-                    </tr>
-                    </tbody>
-                </table>
-                </div>
-            </div>
-
-        <!-- Peer Pressure -->
-        <div class="container-fluid">
-            <img src="./images/registration header.png" class="img-fluid mt-5 mb-0" width="100%" alt="The Community Welcomes You">
-        </div>
-
-        <!-- Membership registration form -->
-    <div class="container mb-5 mt-0 shadow-lg p-0 mx-auto" id="registration" style="max-width: 90vw;"> 
-    <form action="#" method="POST" class="p-4">
-        <h2 class="text-center">Registration Form</h2>
-        <div class="row mb-3">
-            <div class="col-6">
-                <label for="f_name" class="form-label">First Name</label>
-                <input type="text" id="f_name" name="f_name" class="form-control" placeholder="Link">
-            </div>
-            <div class="col-6">
-                <label for="l_name" class="form-label">Last Name</label>
-                <input type="text" id="l_name" name="l_name" class="form-control" placeholder="The GOAT">
-            </div>
-        </div>
-        <label for="email" class="form-label">Email Address</label>
-        <div class="input-group mb-3">
-            <span class="input-group-text">@</span>
-            <input type="text" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" id="password" name="password" class="form-control" placeholder="must contain at least 8 characters" required>
-            <div class="invalid-feedback">Username is Required</div>
-        </div>
-        <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-            <label class="form-check-label" for="flexCheckDefault">I agree to the terms of use of the link G.O.A.T website</label>
-        </div>
-        <button class="btn btn-success w-100 d-block mx-auto mb-3">Submit</button>
-    </form>
-    </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="container-fluid border-top border-warning" id="footer">
-        <div class="row d-flex justify-content-center">
-            <div class="col-lg-3 col-md-7 col-sm-12 mx-0 pb-2" id="footer-logo">
-                <img class="img" src="./images/footer logo.png" alt="Link the GOAT">
-            </div>
-            <div class="col-lg-2 col-md-6 mb-3 text-white" id="quick-links">
-                <h5>Navigation</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-1"><a href="#nav" class="nav-link p-0 text-white">Home</a></li>
-                    <li class="nav-item mb-1"><a href="#jumbotron" class="nav-link p-0 text-white">About Us</a></li>
-                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Merch Store</a></li>
-                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
-                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Archives</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-3 text-white" id="contact-info">
-                <h5>Contact Us</h5>
-                <ul class="nav flex-column list-unstyled">
-                    <li class="nav-item mb-1 p-0 text-white">1-267-436-5109</li>
-                    <li class="nav-item mb-3"><a href="tel:2674365109" class="text-white">Click Here to Call</a></li>
-                </ul>
-                <h5>Address</h5>
-                <p class="nav-item mb-2 p-0 text-white">7901 4th St N STE: 300 <br>St. Petersburg, FL 33702</p>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-3" id="newsletter-signup">
-                <form>
-                    <h5 class="text-white mb-3">Subscribe to our newsletter</h5>
-                    <div class="d-flex flex-lg-column flex-md-row gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-warning text-white" type="button">Subscribe</button>
-                    </div>
-                </form>
-            </div>
+
+
+
+
+
+
+
+
+
+
+    <footer class="container-fluid border-top pt-5 border-warning" id="footer">
+
+        <div class="d-block" id="footer-logo">
+            <img class="img p-2" src="./images/footer logo.png" alt="Link the GOAT">
         </div>
-        <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 border-top" id="legal-social">
-            <p class="text-white mx-0">© 2025 Innvisia Digital Marketing, Inc. All rights reserved.</p>
-            <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-twitter-x" viewBox="0 0 24 24">
+
+        <div class="text-white" id="quick-links">
+            <h5>Navigation</h5>
+            <ul class="nav d-block">
+                <li class="nav-item mb-1"><a href="index.html" class="nav-link p-0 text-white">Home</a></li>
+                <li class="nav-item mb-1"><a href="about.html" class="nav-link p-0 text-white">About Us</a></li>
+                <li class="nav-item mb-1"><a href="about.html#faq" class="nav-link p-0 text-white">FAQs</a></li>
+                <li class="nav-item mb-1"><a href="archives.html" class="nav-link p-0 text-white">Archives</a></li>
+                <li class="nav-item mb-1"><a href="shop.html" class="nav-link p-0 text-white">Shop</a></li>
+
+            </ul>
+        </div>
+
+        <div class="d-block text-white" id="contact-info">
+            <h5>Contact Us</h5>
+            <ul class="d-block nav list-unstyled">
+                <li class="nav-item text-white">1-267-436-5109</li>
+                <li class="nav-item"><a href="tel:2674365109" class="text-white">Click Here to Call</a></li>
+            </ul><br/>
+            <h5>Address</h5>
+            <p class="text-white">7901 4th St N, STE 300 <br>St. Petersburg, FL 33702</p>
+        </div> 
+
+        <div class="d-block text-white" id="newsletter-signup">
+            <form>
+                <h5 class="text-white mb-3">Subscribe to our newsletter</h5>
+                <div class="d-flex flex-lg-column flex-md-row gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-warning text-white" type="button">Subscribe</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="border-top py-3 d-flex" id="legal-social">
+            <p class="d-flex text-white fs-5 mx-0">© 2025 Innvisia Digital Marketing, Inc. All rights reserved.</p>
+            <ul class="list-unstyled align-content-center">
+                <li class="ms-3 mb-0 d-inline"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-twitter-x" viewBox="0 0 24 24">
                     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                 </svg></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-instagram" viewBox="0 0 24 24">
+                <li class="ms-3 mb-0 d-inline"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-instagram" viewBox="0 0 24 24">
                     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
                 </svg></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-facebook" viewBox="0 0 24 24">
+                <li class="ms-3 mb-0 d-inline"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-facebook" viewBox="0 0 24 24">
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
                 </svg></a></li>
             </ul>
         </div>
-
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
 </html>
